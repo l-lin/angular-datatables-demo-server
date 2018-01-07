@@ -16,6 +16,7 @@
 
 // Disable CORS so we can call it from anywhere
 header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Easy set variables
