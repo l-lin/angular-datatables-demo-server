@@ -14,6 +14,9 @@
  * @license MIT - http://datatables.net/license_mit
  */
 
+// Disable CORS so we can call it from anywhere
+header("Access-Control-Allow-Origin: *");
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Easy set variables
  */
