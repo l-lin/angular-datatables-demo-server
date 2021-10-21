@@ -16,3 +16,4 @@ Install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 git remote add heroku https://git.heroku.com/angular-datatables-demo-server.git
 git push heroku master
 ```
+
