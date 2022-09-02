@@ -39,8 +39,8 @@ $columns = array(
     array( 'db' => 'lastName',  'dt' => 'lastName' ),
 );
 
-$db_user = getenv('DATABASE_USERNAME');
-$db_pass = getenv('DATABASE_PASSWORD');
+$db_user = 'root';
+$db_pass = getenv('DATABASE_ROOT_PASSWORD');
 $db_host = getenv('DATABASE_HOST');
 $db_name = getenv('DATABASE_NAME');
 
