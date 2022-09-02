@@ -39,13 +39,16 @@ $columns = array(
     array( 'db' => 'lastName',  'dt' => 'lastName' ),
 );
 
-$dbopts = parse_url(getenv('JAWSDB_URL'));
+$db_user = getenv('DATABASE_USERNAME');
+$db_pass = getenv('DATABASE_PASSWORD');
+$db_host = getenv('DATABASE_HOST');
+$db_name = getenv('DATABASE_NAME');
 
 $sql_details = array(
-    'user' => $dbopts['user'],
-    'pass' => $dbopts['pass'],
-    'db'   => ltrim($dbopts['path'],'/'),
-    'host' => $dbopts['host']
+    'user' => $db_user,
+    'pass' => $db_pass,
+    'db'   => ltrim($db_name,'/'),
+    'host' => $db_host
 );
 
 // Fix for Angular, based on:
